@@ -8,9 +8,10 @@ import {
     Rubik_400Regular,
     Rubik_500Medium,
     Rubik_700Bold
- } from '@expo-google-fonts/rubik';
+} from '@expo-google-fonts/rubik';
 
- import { Loading } from '@/components/loading';
+import { Loading } from '@/components/loading';
+import { StatusBar } from 'expo-status-bar';
 
 export default function _Layout() {
     // Carregando fontes
@@ -21,23 +22,23 @@ export default function _Layout() {
         Rubik_700Bold
     });
 
-    //Verifica se as fontes foram carregadas
+    // Verifica se as fontes foram carregadas
     if (!fontsLoaded) {
         return <Loading />;
     }
 
-  return ( 
-  <GestureHandlerRootView style={{ flex: 1 }}>
-      <Stack 
-        screenOptions={{
-            headerShown: false,
-            contentStyle: {
-                backgroundColor: colors.gray[100],
-            }
-        }}
-      />;
-
-    </GestureHandlerRootView>
-  )
-  
+    return (
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <StatusBar backgroundColor="transparent" translucent={true} />
+            
+            <Stack
+                screenOptions={{
+                    headerShown: false,
+                    contentStyle: {
+                        backgroundColor: colors.gray[100],
+                    },
+                }}
+            />
+        </GestureHandlerRootView>
+    );
 }
