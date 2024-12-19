@@ -41,6 +41,7 @@ Antes de iniciar, você precisará ter instalado em sua máquina:
 2. Acesse o diretório do projeto:
    ```bash
    cd nlw-pocket-nearby
+   cd mobile
    ```
 
 3. Instale as dependências:
@@ -82,9 +83,6 @@ Fique à vontade para contribuir com melhorias ou novas ideias para o projeto! S
    ```
 5. Abra um Pull Request.
 
-## 📜 Licença
-
-Este projeto está sob a licença MIT. Para mais informações, veja o arquivo [LICENSE](LICENSE).
 
 ---
 
